@@ -76,3 +76,7 @@ submitUserGuess.addEventListener('click', () => {
     //     tooLowTooHigh('too high');
     // } else {}
 });
+
+resetPlayAgain.addEventListener('click', () => {
+    return window.location.reload(true);
+})
