@@ -19,7 +19,7 @@
         </div>
     </header>
     <main class="container">
-        <section class="rules-section rules-container">
+        <section class="rules-section rules-container " id="hide-1" >
             <h2 class="intro-header">Guess the Number</h2>
             <div class="introduction">
                 <h2 class="intro-header">What's Happening Here?</h2>
@@ -40,19 +40,27 @@
                 </ul>
             </div>
         </section>
-        <section class="hidden-winner">
-
+        <section class="hidden-winner win-grid win-win" id="hide-winner">
+            <img src="./giorgio-trovato-_XTY6lD8jgM-unsplash.jpg"/>
+            <p>You have won, and since you have won you are going 
+                to be rewarded with the reason this game is heavily 
+                emphasized. The... Reason... Is... because it's so much FUN!
+            <p>
         </section>
-        <section class="hidden-lost">
-
+        <section class="hidden-lost lose-grid lose-lose" id="hide-lost">
+            <img src="./pawel-janiak-WtRuYJ2EPMA-unsplash.jpg"/>
+            <p>Oh... I see... hmmm... This is awkward.
+                 The only advice I got for you is that you win some 
+                 and you lose a ton. You know what? You should try again
+                  I know you can do it :D
+            <p>
         </section>
-        <section class="quiz-section quiz-flex">
-            <span id="result"></span>
+        <button class="hidden reset-button" id="reset-game"><span id="reset-msg"></span></button>
+        <section class="quiz-section quiz-flex" id="hide-2">
             <span id="guess-is"></span>
             <span id="remaining-guesses"></span>
-            <input type="number" id="input-guess" placeholder="Enter Your Valuable Guess">
-            <button class="submit-button" id="submit-guess">Take a Guess</button>
-            <button class="hidden" id="reset-game"></button>
+            <input class="hide " type="number" id="input-guess" placeholder="Enter Your Valuable Guess">
+            <button class="submit-button hide " id="submit-guess">Take a Guess</button>
         </section>
     </main>
     <footer>THE GAME'S FOOTER</footer>
