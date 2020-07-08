@@ -101,7 +101,7 @@ header {
 }
 
 .win-grid {
-    grid-column: 1 / span;
+    grid-column: 1 / 2 span;
     grid-row-start: 1;
     justify-self: center;
 }
@@ -115,7 +115,7 @@ header {
 }
 
 .lose-grid {
-    grid-column: 1 / span;
+    grid-column: 1 / 2 span;
     grid-row-start: 1;
     justify-self: center;
 }
