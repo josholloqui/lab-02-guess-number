@@ -1,24 +1,10 @@
 
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1);
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
     --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
     
     font-family: 'Roboto Mono', monospace;
+    height: 100%;
+    margin: 0;
     background-color: var(--color2);
     background-image: url(../alex-chambers-CyMd0vOYFfU-unsplash.jpg);
     background-size: cover;
@@ -47,11 +33,121 @@ header {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-top: 70px;
+    padding-bottom: 180px;
 }
 
+.rules-section {
+    grid-column: 1 / span 2;
+    color: white;
+    text-align: center;
+}
+
+.quiz-section {
+    grid-column: 1 / span 2;
+    grid-row-start: 2;
+}
+
+.rules-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.intro-header {
+    grid-column: 1 / span 4;
+    grid-row-start: 1;
+}
+
+.introduction {
+    grid-column: 1 / span 2;
+    grid-row-start: 2;
+    text-align: start;
+    padding-left: 40px;
+    justify-self: center;
+}
+
+.intro-header {
+    text-align: center;
+}
+
+.rules-of-game {
+    grid-column: 3 / span 2;
+    grid-row-start: 2;
+    justify-self: center;
+}
+
+.list {
+    text-align: start;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.quiz-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 25%;
+    padding-left: 25%;
+}
 
 .hidden {
     display: none;
+}
+
+.hidden-lost {
+    display: none;
+}
+
+.hidden-winner {
+    display: none;
+}
+
+input {
+    width: 120px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    align-self: center;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+    width: 100%;
+    text-align: center;
+}
+
+.submit-button {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: center;
+    background-color: white;
+    transition: 0.5s;
+    padding: 12px 20px 12px 40px;
+}
+
+.submit-button:hover {
+    font-size: 24px;
+    font-weight: bolder;
+    border: solid yellow;
+}
+
+footer {
+    color: white;
+    text-align: end;
+    height: 20px;
+    border-top: dotted #949497;
+    border-left: dotted #949497;
+    border-right: dotted #949497;
 }

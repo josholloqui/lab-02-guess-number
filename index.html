@@ -19,28 +19,43 @@
         </div>
     </header>
     <main class="container">
-        <section class="rules">
-            <h2>Guess the Number</h2>
-            <p>Welcome, you have stumbled upon what is known as "THE GAME".
+        <section class="rules-section rules-container">
+            <h2 class="intro-header">Guess the Number</h2>
+            <div class="introduction">
+                <h2 class="intro-header">What's Happening Here?</h2>
+                <p>Welcome, you have stumbled upon what is known as "THE GAME".
                 Now I know you may be asking yourself why the emphasis in the 
                 name? Good question, but sadly I can't provide you with the answer 
                 until you have successfully won THE GAME. Trust us you want to know 
                 why...
-            </p>
-            <
+                </p>
+            </div>
+            <div class="rules-of-game">
+                <h2>Rules of THE GAME</h2>
+                <ul class="list">
+                    <li>You must guess a number between 1 through 20</li>
+                    <li>You can also chose 1 or 20 if you would like</li>
+                    <li>You ONLY get 3 chances to guess the right number</li>
+                    <li>If after 3 chances you fail then...</li>
+                </ul>
+            </div>
         </section>
-        <section class="main-section">
+        <section class="hidden-winner">
+
+        </section>
+        <section class="hidden-lost">
+
+        </section>
+        <section class="quiz-section quiz-flex">
             <span id="result"></span>
             <span id="guess-is"></span>
             <span id="remaining-guesses"></span>
-            <input id="input-guess">
-            <button id="submit-guess">Take a Guess</button>
+            <input type="number" id="input-guess" placeholder="Enter Your Valuable Guess">
+            <button class="submit-button" id="submit-guess">Take a Guess</button>
             <button class="hidden" id="reset-game"></button>
         </section>
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
+    <footer>THE GAME'S FOOTER</footer>
 
     <script type="module" src="app.js"></script>
 </body>
