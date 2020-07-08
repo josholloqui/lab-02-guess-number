@@ -1,9 +1,5 @@
-// import functions and grab DOM elements
 import compare from './comparing.js';
-import compareNums from './comparing.js';
- 
-// initialize state
-// grabbing the the users guess in input
+ // grabbing the the users guess in input
 const userInput = document.querySelector('#input-guess');
 // grabbing the button
 const submitUserGuess = document.querySelector('#submit-guess');
@@ -79,4 +75,4 @@ submitUserGuess.addEventListener('click', () => {
 
 resetPlayAgain.addEventListener('click', () => {
     return window.location.reload(true);
-})
+});

@@ -5,5 +5,7 @@ export default function compareNums(guess, correctAnswer) {
         return -1;
     } else if (guess > correctAnswer) {
         return 1;
+    } else {
+        alert('Please enter a valid number. Thank you');
     }
 }
