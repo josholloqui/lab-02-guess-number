@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            THE GAME
+        </div>
+    </header>
+    <main class="container">
+        <section class="rules-section rules-container " id="hide-1" >
+            <h2 class="intro-header">Guess the Number</h2>
+            <div class="introduction">
+                <h2 class="intro-header">What's Happening Here?</h2>
+                <p>Welcome, you have stumbled upon what is known as "THE GAME".
+                Now I know you may be asking yourself why the emphasis in the 
+                name? Good question, but sadly I can't provide you with the answer 
+                until you have successfully won THE GAME. Trust us you want to know 
+                why...
+                </p>
+            </div>
+            <div class="rules-of-game">
+                <h2>Rules of THE GAME</h2>
+                <ul class="list">
+                    <li>You must guess a number between 1 through 20</li>
+                    <li>You can also chose 1 or 20 if you would like</li>
+                    <li>You ONLY get 3 chances to guess the right number</li>
+                    <li>If after 3 chances you fail then...</li>
+                </ul>
+            </div>
+        </section>
+        <section class="hidden-winner win-grid win-win" id="hide-winner">
+            <img src="./giorgio-trovato-_XTY6lD8jgM-unsplash.jpg"/>
+            <p>You have won, and since you have won you are going 
+                to be rewarded with the reason this game is heavily 
+                emphasized. The... Reason... Is... because it's so much FUN!
+            <p>
+        </section>
+        <section class="hidden-lost lose-grid lose-lose" id="hide-lost">
+            <img src="./pawel-janiak-WtRuYJ2EPMA-unsplash.jpg"/>
+            <p>Oh... I see... hmmm... This is awkward.
+                 The only advice I got for you is that you win some 
+                 and you lose a ton. You know what? You should try again
+                  I know you can do it :D
+            <p>
+        </section>
+        <button class="hidden reset-button" id="reset-game"><span id="reset-msg"></span></button>
+        <section class="quiz-section quiz-flex" id="hide-2">
+            <span id="guess-is"></span>
+            <span id="remaining-guesses"></span>
+            <input class="hide " type="number" id="input-guess" placeholder="Enter Your Valuable Guess">
+            <button class="submit-button hide " id="submit-guess">Take a Guess</button>
+        </section>
+    </main>
+    <footer>THE GAME'S FOOTER</footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
